@@ -1,4 +1,4 @@
 res://default_bus_layout.tres
-res://scenes/player.tscn
-res://scripts/player.gd
 res://scenes/levels/level_1.tscn
+res://scenes/player.tscn
+res://scenes/platform.tscn

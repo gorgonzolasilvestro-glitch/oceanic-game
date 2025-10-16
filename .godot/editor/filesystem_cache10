@@ -1,47 +1,50 @@
-63f7b34db8d8cdea90c76aacccf841ec
-::res://::1760641682
-default_bus_layout.tres::AudioBusLayout::5713629723425381208::1760641360::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1760639153::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D::1521331929045342228::1760639153::1760639359::1::::<><><>0<>0<>213a7773bd5d99b487230bb6e7e83c12<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1760639153
-::res://assets/fonts/::1760639359
-PixelifySans-VariableFont_wght.ttf::FontFile::4292691782190315921::1760639153::1760639359::1::::<><><>0<>0<>36cb7fe9ee30e3f661a970af355ea0ea<>res://.godot/imported/PixelifySans-VariableFont_wght.ttf-e5e1ab46c22d34095a3cee415ea8e3ad.fontdata::
-PixelOperator.ttf::FontFile::2419169862414787387::1760639153::1760639359::1::::<><><>0<>0<>639d264d805df1bb08b22e720689b15d<>res://.godot/imported/PixelOperator.ttf-4e2e353e9baa4a06a78c11a8a9cf30dc.fontdata::
-::res://assets/sounds/::1760640811
-086398_game-die-81356.mp3::AudioStreamMP3::8419819640578092580::1760639153::1760639359::1::::<><><>0<>0<>76bc1aa25c2d72e97159ff677e8013d4<>res://.godot/imported/086398_game-die-81356.mp3-68b9a2a99e61f4ce7286059ad6c74f16.mp3str::
-game-level-complete-143022 (1).mp3::AudioStreamMP3::3192513369762626598::1760639153::1760639359::1::::<><><>0<>0<>892acd009bf9cbae52331d5ec1f1c4a4<>res://.godot/imported/game-level-complete-143022 (1).mp3-eb449ec6b16aa3a5384c48ff46e6bc8f.mp3str::
-retro-coin-4-236671 (1).mp3::AudioStreamMP3::8226802300287447285::1760639153::1760639359::1::::<><><>0<>0<>d883ae10c315b928098ff196a216f779<>res://.godot/imported/retro-coin-4-236671 (1).mp3-23336dde2dbd5cf163af17b064b8c956.mp3str::
-the third sanctuary.mp3::AudioStreamMP3::4663814828403516198::1760640810::1760640811::1::::<><><>0<>0<>1610d9fc72c7adc6e364b71360a1bab1<>res://.godot/imported/the third sanctuary.mp3-9a9f587e4ba54a40a94c6fa64afda338.mp3str::
-::res://assets/spritesandtiles/::1760641171
-coinsspritesheet.png::CompressedTexture2D::1060052986675718779::1760639153::1760639359::1::::<><><>0<>0<>600b4a36c5ececa878932b8130cd494f<>res://.godot/imported/coinsspritesheet.png-c890eec6defc1c9aeba327f6c9b9a01f.ctex::
-goblingamespritesheet1.png::CompressedTexture2D::2137983427313299567::1760639153::1760639359::1::::<><><>0<>0<>b636f5535f2471b927807883514df3c2<>res://.godot/imported/goblingamespritesheet1.png-1c7b7a038dc5321142d5a65b002830af.ctex::
-knight.png::CompressedTexture2D::7289753963351471495::1760641171::1760641171::1::::<><><>0<>0<>3b42e4d4cb60adbf24104e5cb309839c<>res://.godot/imported/knight.png-10a0efa9e8599203e01e29673bf12eac.ctex::
-knightspritesheet.png::CompressedTexture2D::4333806347702668516::1760639153::1760639359::1::::<><><>0<>0<>7415e975d8a6cc04ed6151065f9df0a9<>res://.godot/imported/knightspritesheet.png-9acb3ed016260a42bdb341884b360d7f.ctex::
-LOGOBLACK.png::CompressedTexture2D::50247264169705270::1760639153::1760639359::1::::<><><>0<>0<>d6ca014566ab512b3db4df165258f4e2<>res://.godot/imported/LOGOBLACK.png-7a5a16f11c2af3b60a804425e99d622a.ctex::
-::res://assets ufficiali/::1760641694
-::res://assets ufficiali/assets/::1760644165
-CharAni-Sheet4.png::CompressedTexture2D::5792914851812615217::1760641694::1760641694::1::::<><><>0<>0<>d7dd78866f32abcb5a73a26b1773cb50<>res://.godot/imported/CharAni-Sheet4.png-9d4d96a90475a96a755b5cbbbf5c0517.ctex::
-knight.png::CompressedTexture2D::4794594716275708518::1760641694::1760641694::1::::<><><>0<>0<>7bebb1b951b0274868d1851f046ccc51<>res://.godot/imported/knight.png-e401ac17c6cc6f824b64c04195313d51.ctex::
-Tileset.png::CompressedTexture2D::8531460463044213537::1760644165::1760644166::1::::<><><>0<>0<>237bf53764dea61e8eb2e612b78ef058<>res://.godot/imported/Tileset.png-4d5f46b161a25d1155e81a395f05c64a.ctex::
-::res://scenes/::1760643520
-bgscore.tscn::PackedScene::272292035180293050::1760639153::0::1::::<><><>0<>0<><>::uid://dcmgejjpuo2t6::::res://assets/sounds/happy-14585.mp3
-coins.tscn::PackedScene::6315995279012084655::1760639153::0::1::::<><><>0<>0<><>::uid://b532xg1p23qa7::::res://scripts/coins.gd<>uid://pdq6g82b0oj0::::res://assets/spritesandtiles/coinsspritesheet.png<>uid://dpheh5d76okmv::::res://assets/sounds/retro-coin-4-236671 (1).mp3
-enemy.tscn::PackedScene::5787970699043758374::1760639153::0::1::::<><><>0<>0<><>::uid://c6nmoadd0vqvj::::res://scripts/enemy.gd<>uid://b20lfl6ix6o1q::::res://assets/spritesandtiles/knightspritesheet.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn
-killzone.tscn::PackedScene::174508661700247586::1760639153::0::1::::<><><>0<>0<><>::uid://cnvl1x6lwoi5y::::res://scripts/killzone.gd<>uid://dr7vg1oo5glx1::::res://assets/sounds/086398_game-die-81356.mp3
-platform.tscn::PackedScene::6838488032717272124::1760639153::0::1::::<><><>0<>0<><>::uid://bf31vnhmqas02::::res://scripts/platform.gd<>uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
-player.tscn::PackedScene::1762400828491724325::1760643520::0::1::::<><><>0<>0<><>::uid://b5ni5nf61jj5x::::res://scripts/player.gd<>uid://db4hghiax0cyx::::res://assets/spritesandtiles/knight.png<>uid://caksjlkc3t7nu::::res://assets ufficiali/assets/knight.png
-::res://scenes/levels/::1760643342
-gametilemap.tscn::PackedScene::4150920340205671688::1760639153::0::1::::<><><>0<>0<><>::uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
-level_1.tscn::PackedScene::8468622124454539738::1760643342::0::1::::<><><>0<>0<><>::uid://bjhve3c1ouf0m::::res://scripts/gamemanager.gd<>uid://dcwhujwbmk2tg::::res://scripts/level_1.gd<>uid://x0nkvs0ub104::::res://styles/ingametext.tres<>uid://0dyqpxiehd0p::::res://scenes/player.tscn<>uid://b0e0b0t77smh1::::res://scenes/levels/gametilemap.tscn<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn<>uid://cop0bc0c7rxu1::::res://scenes/enemy.tscn<>uid://cv8rrwrejrbn0::::res://scenes/coins.tscn<>uid://c4ou5s81n7p6s::::res://scenes/platform.tscn<>uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf<>uid://blqqh1pq31831::::res://assets/sounds/game-level-complete-143022 (1).mp3<>uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
-::res://scenes/test/::1760639153
-testscene.tscn::PackedScene::4426919525908749456::1760639153::0::1::::<><><>0<>0<><>::uid://b0e0b0t77smh1::::res://scenes/levels/gametilemap.tscn<>uid://0dyqpxiehd0p::::res://scenes/player.tscn
-::res://scripts/::1760643484
-coins.gd::GDScript::4551569358036000592::1760639153::0::1::::<>Area2D<><>0<>0<><>::
-enemy.gd::GDScript::6976286040800821739::1760639153::0::1::::<>CharacterBody2D<><>0<>0<><>::
-gamemanager.gd::GDScript::3033854595681761586::1760639153::0::1::::<>Node<><>0<>0<><>::
-killzone.gd::GDScript::5729363841533576612::1760639153::0::1::::<>Area2D<><>0<>0<><>::
-level_1.gd::GDScript::7345517290529890984::1760639153::0::1::::<>Node2D<><>0<>0<><>::
-platform.gd::GDScript::2796784316664678517::1760639153::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-player.gd::GDScript::4519462905367310271::1760643484::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://styles/::1760639153
-ingametext.tres::LabelSettings::1666761158330767295::1760639153::0::1::::<><><>0<>0<><>::uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1760649628
+default_bus_layout.tres::AudioBusLayout/AudioBusLayout::5713629723425381208::1760646628::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1735801355::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::1521331929045342228::1735625152::1760646612::1::::<><><>0<>0<>213a7773bd5d99b487230bb6e7e83c12<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1735801870
+::res://assets/fonts/::1760646612
+PixelifySans-VariableFont_wght.ttf::FontFile/FontFile::4292691782190315921::1735641102::1760646612::1::::<><><>0<>0<>36cb7fe9ee30e3f661a970af355ea0ea<>res://.godot/imported/PixelifySans-VariableFont_wght.ttf-e5e1ab46c22d34095a3cee415ea8e3ad.fontdata::
+PixelOperator.ttf::FontFile/FontFile::2419169862414787387::1735641447::1760646612::1::::<><><>0<>0<>639d264d805df1bb08b22e720689b15d<>res://.godot/imported/PixelOperator.ttf-4e2e353e9baa4a06a78c11a8a9cf30dc.fontdata::
+::res://assets/sounds/::1760646612
+086398_game-die-81356.mp3::AudioStreamMP3/AudioStreamMP3::8419819640578092580::1735797276::1760637312::1::::<><><>0<>0<>76bc1aa25c2d72e97159ff677e8013d4<>res://.godot/imported/086398_game-die-81356.mp3-68b9a2a99e61f4ce7286059ad6c74f16.mp3str::
+game-level-complete-143022 (1).mp3::AudioStreamMP3/AudioStreamMP3::3192513369762626598::1735725047::1760637312::1::::<><><>0<>0<>892acd009bf9cbae52331d5ec1f1c4a4<>res://.godot/imported/game-level-complete-143022 (1).mp3-eb449ec6b16aa3a5384c48ff46e6bc8f.mp3str::
+retro-coin-4-236671 (1).mp3::AudioStreamMP3/AudioStreamMP3::8226802300287447285::1735724484::1760637312::1::::<><><>0<>0<>d883ae10c315b928098ff196a216f779<>res://.godot/imported/retro-coin-4-236671 (1).mp3-23336dde2dbd5cf163af17b064b8c956.mp3str::
+the third sanctuary.mp3::AudioStreamMP3/AudioStreamMP3::4663814828403516198::1760646612::1760646612::1::::<><><>0<>0<>1610d9fc72c7adc6e364b71360a1bab1<>res://.godot/imported/the third sanctuary.mp3-9a9f587e4ba54a40a94c6fa64afda338.mp3str::
+::res://assets/spritesandtiles/::1760646612
+coinsspritesheet.png::CompressedTexture2D/CompressedTexture2D::1060052986675718779::1735638468::1760646612::1::::<><><>0<>0<>600b4a36c5ececa878932b8130cd494f<>res://.godot/imported/coinsspritesheet.png-c890eec6defc1c9aeba327f6c9b9a01f.ctex::
+goblingamespritesheet1.png::CompressedTexture2D/CompressedTexture2D::2137983427313299567::1735799479::1760646612::1::::<><><>0<>0<>b636f5535f2471b927807883514df3c2<>res://.godot/imported/goblingamespritesheet1.png-1c7b7a038dc5321142d5a65b002830af.ctex::
+knight.png::CompressedTexture2D/CompressedTexture2D::7289753963351471495::1760646612::1760646612::1::::<><><>0<>0<>3b42e4d4cb60adbf24104e5cb309839c<>res://.godot/imported/knight.png-10a0efa9e8599203e01e29673bf12eac.ctex::
+knightspritesheet.png::CompressedTexture2D/CompressedTexture2D::4333806347702668516::1735796457::1760646612::1::::<><><>0<>0<>7415e975d8a6cc04ed6151065f9df0a9<>res://.godot/imported/knightspritesheet.png-9acb3ed016260a42bdb341884b360d7f.ctex::
+LOGOBLACK.png::CompressedTexture2D/CompressedTexture2D::50247264169705270::1735718657::1760646612::1::::<><><>0<>0<>d6ca014566ab512b3db4df165258f4e2<>res://.godot/imported/LOGOBLACK.png-7a5a16f11c2af3b60a804425e99d622a.ctex::
+::res://assets ufficiali/::1760650433
+30um0rwun2d01.png::CompressedTexture2D::101300323848512345::1760650433::1760650430::1::::<><><>0<>0<>f6342ba09b4a3d2b96f9c1c07e35a681<>res://.godot/imported/30um0rwun2d01.png-50e204408b6e5259b0741af681534e23.ctex::
+::res://assets ufficiali/assets/::1760650442
+30um0rwun2d01.png::CompressedTexture2D::8202143584904640225::1760650442::1760650442::1::::<><><>0<>0<>6946a2d4604c424ce51c180f6f4ec68d<>res://.godot/imported/30um0rwun2d01.png-18cadad4ad92e514024225952f4ff254.ctex::
+CharAni-Sheet4.png::CompressedTexture2D/CompressedTexture2D::5792914851812615217::1760646612::1760646612::1::::<><><>0<>0<>d7dd78866f32abcb5a73a26b1773cb50<>res://.godot/imported/CharAni-Sheet4.png-9d4d96a90475a96a755b5cbbbf5c0517.ctex::
+knight.png::CompressedTexture2D/CompressedTexture2D::4794594716275708518::1760646612::1760646612::1::::<><><>0<>0<>7bebb1b951b0274868d1851f046ccc51<>res://.godot/imported/knight.png-e401ac17c6cc6f824b64c04195313d51.ctex::
+Muri.png::CompressedTexture2D::7214823209043727430::1760649623::1760649628::1::::<><><>0<>0<>4a69df3dc383113f76b53ba75ecbaa27<>res://.godot/imported/Muri.png-bb2f4e627ae050bd1f6ce679617fd8af.ctex::
+Tileset.png::CompressedTexture2D/CompressedTexture2D::8531460463044213537::1760646612::1760646612::1::::<><><>0<>0<>237bf53764dea61e8eb2e612b78ef058<>res://.godot/imported/Tileset.png-4d5f46b161a25d1155e81a395f05c64a.ctex::
+::res://scenes/::1760647118
+bgscore.tscn::PackedScene/PackedScene::272292035180293050::1760637377::0::1::::<><><>0<>0<><>::uid://dcmgejjpuo2t6::::res://assets/sounds/happy-14585.mp3
+coins.tscn::PackedScene/PackedScene::6315995279012084655::1760637376::0::1::::<><><>0<>0<><>::uid://b532xg1p23qa7::::res://scripts/coins.gd<>uid://pdq6g82b0oj0::::res://assets/spritesandtiles/coinsspritesheet.png<>uid://dpheh5d76okmv::::res://assets/sounds/retro-coin-4-236671 (1).mp3
+enemy.tscn::PackedScene/PackedScene::5787970699043758374::1760637376::0::1::::<><><>0<>0<><>::uid://c6nmoadd0vqvj::::res://scripts/enemy.gd<>uid://b20lfl6ix6o1q::::res://assets/spritesandtiles/knightspritesheet.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn
+killzone.tscn::PackedScene/PackedScene::174508661700247586::1760637376::0::1::::<><><>0<>0<><>::uid://cnvl1x6lwoi5y::::res://scripts/killzone.gd<>uid://dr7vg1oo5glx1::::res://assets/sounds/086398_game-die-81356.mp3
+platform.tscn::PackedScene/PackedScene::6838488032717272124::1760647118::0::1::::<><><>0<>0<><>::uid://bf31vnhmqas02::::res://scripts/platform.gd<>uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
+player.tscn::PackedScene/PackedScene::1762400828491724325::1760647118::0::1::::<><><>0<>0<><>::uid://b5ni5nf61jj5x::::res://scripts/player.gd<>uid://db4hghiax0cyx::::res://assets/spritesandtiles/knight.png<>uid://caksjlkc3t7nu::::res://assets ufficiali/assets/knight.png
+::res://scenes/levels/::1760647117
+gametilemap.tscn::PackedScene/PackedScene::4150920340205671688::1760637376::0::1::::<><><>0<>0<><>::uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
+level_1.tscn::PackedScene/PackedScene::8468622124454539738::1760647117::0::1::::<><><>0<>0<><>::uid://bjhve3c1ouf0m::::res://scripts/gamemanager.gd<>uid://dcwhujwbmk2tg::::res://scripts/level_1.gd<>uid://x0nkvs0ub104::::res://styles/ingametext.tres<>uid://0dyqpxiehd0p::::res://scenes/player.tscn<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn<>uid://cop0bc0c7rxu1::::res://scenes/enemy.tscn<>uid://cv8rrwrejrbn0::::res://scenes/coins.tscn<>uid://c4ou5s81n7p6s::::res://scenes/platform.tscn<>uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf<>uid://blqqh1pq31831::::res://assets/sounds/game-level-complete-143022 (1).mp3<>uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png<>uid://dtsx536bwwcx2::::res://assets ufficiali/assets/Tileset.png
+::res://scenes/test/::1760637325
+testscene.tscn::PackedScene/PackedScene::4426919525908749456::1760637325::0::1::::<><><>0<>0<><>::uid://b0e0b0t77smh1::::res://scenes/levels/gametilemap.tscn<>uid://0dyqpxiehd0p::::res://scenes/player.tscn
+::res://scripts/::1760646612
+coins.gd::GDScript/GDScript::4551569358036000592::1735724557::0::1::::<>Area2D<><>0<>0<><>::
+enemy.gd::GDScript/GDScript::6976286040800821739::1735714813::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gamemanager.gd::GDScript/GDScript::3033854595681761586::1735719363::0::1::::<>Node<><>0<>0<><>::
+killzone.gd::GDScript/GDScript::5729363841533576612::1735797287::0::1::::<>Area2D<><>0<>0<><>::
+level_1.gd::GDScript/GDScript::7345517290529890984::1735797949::0::1::::<>Node2D<><>0<>0<><>::
+platform.gd::GDScript/GDScript::2796784316664678517::1735716705::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::4519462905367310271::1760646612::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://styles/::1760637336
+ingametext.tres::LabelSettings/LabelSettings::1666761158330767295::1760637336::0::1::::<><><>0<>0<><>::uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf
