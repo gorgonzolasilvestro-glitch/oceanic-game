@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 		#adding jump through input key for jump
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = JUMP_VELOCITY
+			$AnimatedSprite2D.play("jump")
 	else:
 		#applying gravity 
 		velocity += get_gravity() * delta
