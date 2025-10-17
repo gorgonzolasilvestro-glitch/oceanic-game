@@ -3,8 +3,7 @@ extends Node2D
 @onready var gamecomplete: Panel = $CanvasLayer/gamecomplete
 @onready var audio: AudioStreamPlayer = $gamefinished/AudioStreamPlayer
 
-func _ready() -> void:
-	gamecomplete.visible = false
+
 
 
 func _on_restartbutton_pressed() -> void:

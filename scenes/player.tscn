@@ -163,6 +163,7 @@ position = Vector2(-5, -6)
 shape = SubResource("CircleShape2D_qukjb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -40)
 zoom = Vector2(2, 2)
 limit_bottom = 240
 limit_smoothed = true
