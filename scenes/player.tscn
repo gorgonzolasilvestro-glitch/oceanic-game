@@ -1,8 +1,26 @@
-[gd_scene load_steps=20 format=3 uid="uid://0dyqpxiehd0p"]
+[gd_scene load_steps=28 format=3 uid="uid://0dyqpxiehd0p"]
 
 [ext_resource type="Script" uid="uid://b5ni5nf61jj5x" path="res://scripts/player.gd" id="1_qgb13"]
+[ext_resource type="Texture2D" uid="uid://coklwh1nq71vs" path="res://assets ufficiali/assets/Particle2.png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://db4hghiax0cyx" path="res://assets/spritesandtiles/knight.png" id="2_vopiu"]
 [ext_resource type="Texture2D" uid="uid://cppvrr6qeq2dl" path="res://assets ufficiali/assets/claudio.png" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://dwn4fjpy1ssxx" path="res://assets ufficiali/assets/claudio-sheet.png" id="4_dqkch"]
+[ext_resource type="AudioStream" uid="uid://f2sd327amln3" path="res://Audio/hero_run_footsteps_grass.wav" id="6_ur7pv"]
+[ext_resource type="AudioStream" uid="uid://d51vtjf5oxst" path="res://Audio/hero_jump.wav" id="7_y4r1p"]
+[ext_resource type="AudioStream" uid="uid://brqvb5fgb1e04" path="res://Audio/hero_land_soft.wav" id="8_d2wvv"]
+[ext_resource type="AudioStream" uid="uid://b1erotttkoofc" path="res://Audio/hero_dash.wav" id="9_3v2ag"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dqkch"]
+radius = 5.0
+height = 24.0
+
+[sub_resource type="Curve" id="Curve_dqkch"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.965909, 0.235955), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
+atlas = ExtResource("4_dqkch")
+region = Rect2(384, 0, 64, 55)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_03ofi"]
 atlas = ExtResource("2_vopiu")
@@ -28,13 +46,13 @@ region = Rect2(128, 0, 16, 16)
 atlas = ExtResource("3_qhqgy")
 region = Rect2(0, 0, 64, 55)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("3_qhqgy")
-region = Rect2(384, 0, 64, 55)
+[sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
+atlas = ExtResource("4_dqkch")
+region = Rect2(64, 55, 64, 55)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("3_qhqgy")
-region = Rect2(448, 0, 64, 55)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
+atlas = ExtResource("4_dqkch")
+region = Rect2(128, 55, 64, 55)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
 atlas = ExtResource("3_qhqgy")
@@ -62,6 +80,14 @@ region = Rect2(320, 0, 64, 55)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i7whq"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuyoq")
+}],
+"loop": false,
+"name": &"dash",
+"speed": 2.5
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_03ofi")
@@ -97,14 +123,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qlg0r")
+"texture": SubResource("AtlasTexture_jej6c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tuyoq")
+"texture": SubResource("AtlasTexture_qlg0r")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
-"speed": 3.0
+"speed": 1.5
 }, {
 "frames": [{
 "duration": 1.0,
@@ -130,26 +156,51 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_qukjb"]
-radius = 11.0
-
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 position = Vector2(18, 108)
 collision_layer = 2
 script = ExtResource("1_qgb13")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -8)
-sprite_frames = SubResource("SpriteFrames_i7whq")
-animation = &"idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, -10)
-shape = SubResource("CircleShape2D_qukjb")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -40)
 zoom = Vector2(2, 2)
 limit_bottom = 240
 limit_smoothed = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -12)
+shape = SubResource("CapsuleShape2D_dqkch")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-1, -13)
+emitting = false
+amount = 70
+texture = ExtResource("2_qlg0r")
+lifetime = 0.7
+one_shot = true
+direction = Vector2(-1, 0)
+spread = 107.11
+gravity = Vector2(0, 0)
+initial_velocity_min = 71.42
+initial_velocity_max = 71.43
+scale_amount_min = 0.2
+scale_amount_max = 2.0
+scale_amount_curve = SubResource("Curve_dqkch")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_i7whq")
+animation = &"idle"
+
+[node name="AudioWalk" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ur7pv")
+
+[node name="AudioJump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_y4r1p")
+
+[node name="AudioLand" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_d2wvv")
+
+[node name="AudioDash" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_3v2ag")

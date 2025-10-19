@@ -1,0 +1,17 @@
+# Godot-specific files
+.import/
+.export/
+.export_presets.cfg
+.cache/
+mono/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# User-specific
+*.tmp
+*.log
+*.swp
+*.swo
+*.user
