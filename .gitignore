@@ -1,0 +1,40 @@
+# =======================
+# Godot-specific files
+# =======================
+
+# Import/Cache
+.import/
+.cache/
+.godot/    # editor settings, temp files
+
+# Exported project files
+.export/
+.export_presets.cfg
+
+# Mono / C# files
+.mono/
+*.csproj
+*.sln
+*.userprefs
+*.dll
+*.mdb
+
+# Temporary and user-specific files
+*.tmp
+*.log
+*.swp
+*.swo
+*.user
+
+# =======================
+# OS-specific files
+# =======================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =======================
+# Build directories (optional)
+# =======================
+bin/
+build/
