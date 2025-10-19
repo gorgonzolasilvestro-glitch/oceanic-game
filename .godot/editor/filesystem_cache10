@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760741729
-default_bus_layout.tres::AudioBusLayout::5713629723425381208::1760741729::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1735801355::0::1::::<><><>0<>0<><>::
+::res://::1760863700
+default_bus_layout.tres::AudioBusLayout::5713629723425381208::1760862010::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1735801355::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::1521331929045342228::1735625152::1760646612::1::::<><><>0<>0<>213a7773bd5d99b487230bb6e7e83c12<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1735801870
 ::res://assets/fonts/::1760646612
@@ -26,7 +26,7 @@ palle.png::CompressedTexture2D/CompressedTexture2D::1048318136091300411::1760732
 sfondo.png::CompressedTexture2D/CompressedTexture2D::5612459524533153001::1760735345::1760735346::1::::<><><>0<>0<>ecb349927ba4691e901b7bf1aeea2e06<>res://.godot/imported/sfondo.png-20299dafb05744efcccee42c3a38b359.ctex::
 Swamp.png::CompressedTexture2D/CompressedTexture2D::8868194931797333673::1760724409::1760724407::1::::<><><>0<>0<>9db4b37162c7171f74d1382f7600bad1<>res://.godot/imported/Swamp.png-c268aedcf9e23214fa658489f2a88462.ctex::
 ::res://assets ufficiali/3 Objects/::1760745275
-oak_woods_tileset.png::CompressedTexture2D::8776940530847905676::1760742836::1760742837::1::::<><><>0<>0<>acb917f3903409d187f06adc991845c4<>res://.godot/imported/oak_woods_tileset.png-9025f5266e973048aec59e2f8f3613bf.ctex::
+oak_woods_tileset.png::CompressedTexture2D/CompressedTexture2D::8776940530847905676::1760742836::1760742837::1::::<><><>0<>0<>acb917f3903409d187f06adc991845c4<>res://.godot/imported/oak_woods_tileset.png-9025f5266e973048aec59e2f8f3613bf.ctex::
 ::res://assets ufficiali/3 Objects/Boxes/::1760723378
 1.png::CompressedTexture2D/CompressedTexture2D::9063837273317543865::1760723377::1760723378::1::::<><><>0<>0<>29bb1ab4b38b1326931cd5e6067d7274<>res://.godot/imported/1.png-59d154196946bfe20a0ad78e6c0f11f3.ctex::
 2.png::CompressedTexture2D/CompressedTexture2D::6174868581887504821::1760723377::1760723378::1::::<><><>0<>0<>e58831c9acd9121f9f845b840df72089<>res://.godot/imported/2.png-cb9e977fcd1d854abf2dbb23ab848504.ctex::
@@ -44,19 +44,19 @@ oak_woods_tileset.png::CompressedTexture2D::8776940530847905676::1760742836::176
 7.png::CompressedTexture2D/CompressedTexture2D::6800509031067999522::1760723377::1760723378::1::::<><><>0<>0<>45c02b0b9a278486d77290a32ed9c259<>res://.godot/imported/7.png-f175dec2d7fc684544107958eb8d468a.ctex::
 8.png::CompressedTexture2D/CompressedTexture2D::5720683776367224109::1760723377::1760723378::1::::<><><>0<>0<>9b5861cef5906279a856b900108638e5<>res://.godot/imported/8.png-06451d5236254e48448d76eda6254259.ctex::
 9.png::CompressedTexture2D/CompressedTexture2D::9043159502527218690::1760723377::1760723378::1::::<><><>0<>0<>4cca50f5e95c06d18156f7c53cb7dc04<>res://.godot/imported/9.png-d5715e144c00af3364ad2f905bcfe748.ctex::
-::res://assets ufficiali/3 Objects/decorations/::1760745275
-fence_1.png::CompressedTexture2D::3539351197484494601::1760745275::1760745276::1::::<><><>0<>0<>ce17a425bdbaaf55acf5605eaa25ab0d<>res://.godot/imported/fence_1.png-d22f8d1fcd03025903363551a11a78f3.ctex::
-fence_2.png::CompressedTexture2D::4628391878949414784::1760745275::1760745276::1::::<><><>0<>0<>f69b3e45989b38ec97e53b203ee18ace<>res://.godot/imported/fence_2.png-2ae440f27090546522e0904dcb4ef3ba.ctex::
-grass_1.png::CompressedTexture2D::9043087909813423412::1760745275::1760745276::1::::<><><>0<>0<>652282ce54712a5d282b1a9d39ffa28d<>res://.godot/imported/grass_1.png-8f0df92c73d77680405e8851f02e1e25.ctex::
-grass_2.png::CompressedTexture2D::5070227130003000037::1760745275::1760745276::1::::<><><>0<>0<>d5ff254b7e2fe4f5a25641c827c66786<>res://.godot/imported/grass_2.png-10db346dd378805b475e9081092100bd.ctex::
-grass_3.png::CompressedTexture2D::6560647530605435607::1760745275::1760745276::1::::<><><>0<>0<>1b0a7bc9274d1c50b6beb463c6ade613<>res://.godot/imported/grass_3.png-28f7313d9c00218db0037cdf96209fa8.ctex::
-lamp.png::CompressedTexture2D::3385820928578738668::1760745275::1760745276::1::::<><><>0<>0<>079e931369f8a75b33358d59a5daa715<>res://.godot/imported/lamp.png-948ff655b982c96b4e304a836ad83bda.ctex::
-rock_1.png::CompressedTexture2D::2650317282918299611::1760745275::1760745276::1::::<><><>0<>0<>3b572b96581faee21794563890a2a255<>res://.godot/imported/rock_1.png-436ea156187c1693788f896c6eec9f06.ctex::
-rock_2.png::CompressedTexture2D::854348506167597219::1760745275::1760745276::1::::<><><>0<>0<>e9f6395c42ab0cf9c5715b37c2deaf04<>res://.godot/imported/rock_2.png-32db5b45f5b9d4e9f8b11cc6445e4246.ctex::
-rock_3.png::CompressedTexture2D::8735101759879644291::1760745275::1760745276::1::::<><><>0<>0<>6dd9e5925e9e16f562e6cef98fbc9a66<>res://.godot/imported/rock_3.png-ba5260cd6535c001da4b4b79d7b7ec4d.ctex::
-shop.png::CompressedTexture2D::8173551486836075847::1760745275::1760745276::1::::<><><>0<>0<>5a05dfd4f1abb04cdf6c155853f8d078<>res://.godot/imported/shop.png-d4bc2c673dd7836f40967e116d42e736.ctex::
-shop_anim.png::CompressedTexture2D::3481357888204406958::1760745275::1760745276::1::::<><><>0<>0<>d3c48b5ad2160aca14ca410b626bdf90<>res://.godot/imported/shop_anim.png-6398878a5efdbd015d201dc725c6650d.ctex::
-sign.png::CompressedTexture2D::6974187645538947295::1760745275::1760745276::1::::<><><>0<>0<>542c835c59ffe9ace88258584087e0b6<>res://.godot/imported/sign.png-d76a563a805c87de7743190519985365.ctex::
+::res://assets ufficiali/3 Objects/decorations/::1760745276
+fence_1.png::CompressedTexture2D/CompressedTexture2D::3539351197484494601::1760745275::1760745276::1::::<><><>0<>0<>ce17a425bdbaaf55acf5605eaa25ab0d<>res://.godot/imported/fence_1.png-d22f8d1fcd03025903363551a11a78f3.ctex::
+fence_2.png::CompressedTexture2D/CompressedTexture2D::4628391878949414784::1760745275::1760745276::1::::<><><>0<>0<>f69b3e45989b38ec97e53b203ee18ace<>res://.godot/imported/fence_2.png-2ae440f27090546522e0904dcb4ef3ba.ctex::
+grass_1.png::CompressedTexture2D/CompressedTexture2D::9043087909813423412::1760745275::1760745276::1::::<><><>0<>0<>652282ce54712a5d282b1a9d39ffa28d<>res://.godot/imported/grass_1.png-8f0df92c73d77680405e8851f02e1e25.ctex::
+grass_2.png::CompressedTexture2D/CompressedTexture2D::5070227130003000037::1760745275::1760745276::1::::<><><>0<>0<>d5ff254b7e2fe4f5a25641c827c66786<>res://.godot/imported/grass_2.png-10db346dd378805b475e9081092100bd.ctex::
+grass_3.png::CompressedTexture2D/CompressedTexture2D::6560647530605435607::1760745275::1760745276::1::::<><><>0<>0<>1b0a7bc9274d1c50b6beb463c6ade613<>res://.godot/imported/grass_3.png-28f7313d9c00218db0037cdf96209fa8.ctex::
+lamp.png::CompressedTexture2D/CompressedTexture2D::3385820928578738668::1760745275::1760745276::1::::<><><>0<>0<>079e931369f8a75b33358d59a5daa715<>res://.godot/imported/lamp.png-948ff655b982c96b4e304a836ad83bda.ctex::
+rock_1.png::CompressedTexture2D/CompressedTexture2D::2650317282918299611::1760745275::1760745276::1::::<><><>0<>0<>3b572b96581faee21794563890a2a255<>res://.godot/imported/rock_1.png-436ea156187c1693788f896c6eec9f06.ctex::
+rock_2.png::CompressedTexture2D/CompressedTexture2D::854348506167597219::1760745275::1760745276::1::::<><><>0<>0<>e9f6395c42ab0cf9c5715b37c2deaf04<>res://.godot/imported/rock_2.png-32db5b45f5b9d4e9f8b11cc6445e4246.ctex::
+rock_3.png::CompressedTexture2D/CompressedTexture2D::8735101759879644291::1760745275::1760745276::1::::<><><>0<>0<>6dd9e5925e9e16f562e6cef98fbc9a66<>res://.godot/imported/rock_3.png-ba5260cd6535c001da4b4b79d7b7ec4d.ctex::
+shop.png::CompressedTexture2D/CompressedTexture2D::8173551486836075847::1760745275::1760745276::1::::<><><>0<>0<>5a05dfd4f1abb04cdf6c155853f8d078<>res://.godot/imported/shop.png-d4bc2c673dd7836f40967e116d42e736.ctex::
+shop_anim.png::CompressedTexture2D/CompressedTexture2D::3481357888204406958::1760745275::1760745276::1::::<><><>0<>0<>d3c48b5ad2160aca14ca410b626bdf90<>res://.godot/imported/shop_anim.png-6398878a5efdbd015d201dc725c6650d.ctex::
+sign.png::CompressedTexture2D/CompressedTexture2D::6974187645538947295::1760745275::1760745276::1::::<><><>0<>0<>542c835c59ffe9ace88258584087e0b6<>res://.godot/imported/sign.png-d76a563a805c87de7743190519985365.ctex::
 ::res://assets ufficiali/3 Objects/Fence/::1760723378
 1.png::CompressedTexture2D/CompressedTexture2D::6232098271638022748::1760723377::1760723378::1::::<><><>0<>0<>709faf3a4f52c871530b3dc7e9493cc9<>res://.godot/imported/1.png-9a896fa04fc13d3a0a11996670a638ee.ctex::
 2.png::CompressedTexture2D/CompressedTexture2D::4544802621827170219::1760723377::1760723378::1::::<><><>0<>0<>e21eb19940e15aeacdc3cae18be1aa34<>res://.godot/imported/2.png-fe05fb957c2149f76f16ebdb29c50532.ctex::
@@ -109,35 +109,35 @@ sign.png::CompressedTexture2D::6974187645538947295::1760745275::1760745276::1:::
 1.png::CompressedTexture2D/CompressedTexture2D::1253183500872512750::1760723377::1760723378::1::::<><><>0<>0<>089db326bb228e07059f03bae9a18813<>res://.godot/imported/1.png-c850402675fcc44780694eb872891460.ctex::
 2.png::CompressedTexture2D/CompressedTexture2D::3258118887161978214::1760723377::1760723378::1::::<><><>0<>0<>f6121900c775af7ac4884533a29c2d89<>res://.godot/imported/2.png-ef4a8dfe6742b3759b098319651445ea.ctex::
 3.png::CompressedTexture2D/CompressedTexture2D::8695864215868213515::1760723377::1760723378::1::::<><><>0<>0<>47a0275a9047f5db7ced32c704148222<>res://.godot/imported/3.png-19b4a551495a356a4b2d172f53a2e113.ctex::
-house.png::CompressedTexture2D::65736155762348811::1760745055::1760745055::1::::<><><>0<>0<>698de8b2d55934098ce8b3833741e25a<>res://.godot/imported/house.png-917c769469ea050504f4619f98b61287.ctex::
+house.png::CompressedTexture2D/CompressedTexture2D::65736155762348811::1760745055::1760745055::1::::<><><>0<>0<>698de8b2d55934098ce8b3833741e25a<>res://.godot/imported/house.png-917c769469ea050504f4619f98b61287.ctex::
 ::res://assets ufficiali/assets/::1760745065
 30um0rwun2d01.png::CompressedTexture2D/CompressedTexture2D::8202143584904640225::1760650442::1760650442::1::::<><><>0<>0<>6946a2d4604c424ce51c180f6f4ec68d<>res://.godot/imported/30um0rwun2d01.png-18cadad4ad92e514024225952f4ff254.ctex::
 CharAni-Sheet4.png::CompressedTexture2D/CompressedTexture2D::5792914851812615217::1760646612::1760646612::1::::<><><>0<>0<>d7dd78866f32abcb5a73a26b1773cb50<>res://.godot/imported/CharAni-Sheet4.png-9d4d96a90475a96a755b5cbbbf5c0517.ctex::
 claudio.png::CompressedTexture2D/CompressedTexture2D::5857946045130925149::1760741713::1760741713::1::::<><><>0<>0<>76606127827f5129a9d74af63cc3e614<>res://.godot/imported/claudio.png-c091fc44e7393ded5eddf855fd1dc159.ctex::
 Cloud.png::CompressedTexture2D/CompressedTexture2D::3589505566892606089::1760737471::1760737471::1::::<><><>0<>0<>eba6c2092c8c051d2360bc2ed27d7827<>res://.godot/imported/Cloud.png-d02b1199b549ff5044f061221345bf25.ctex::
-house.png::CompressedTexture2D::9144066650854432859::1760745065::1760745065::1::::<><><>0<>0<>3614de7e7cbc4bee1b337ce186c88b57<>res://.godot/imported/house.png-9b30d6b9bd0cdc4c0d8978209dbbd08d.ctex::
+house.png::CompressedTexture2D/CompressedTexture2D::9144066650854432859::1760745065::1760745065::1::::<><><>0<>0<>3614de7e7cbc4bee1b337ce186c88b57<>res://.godot/imported/house.png-9b30d6b9bd0cdc4c0d8978209dbbd08d.ctex::
 knight.png::CompressedTexture2D/CompressedTexture2D::4794594716275708518::1760646612::1760646612::1::::<><><>0<>0<>7bebb1b951b0274868d1851f046ccc51<>res://.godot/imported/knight.png-e401ac17c6cc6f824b64c04195313d51.ctex::
 Muri.png::CompressedTexture2D/CompressedTexture2D::7214823209043727430::1760649623::1760649628::1::::<><><>0<>0<>4a69df3dc383113f76b53ba75ecbaa27<>res://.godot/imported/Muri.png-bb2f4e627ae050bd1f6ce679617fd8af.ctex::
 Tileset.png::CompressedTexture2D/CompressedTexture2D::8531460463044213537::1760646612::1760646612::1::::<><><>0<>0<>237bf53764dea61e8eb2e612b78ef058<>res://.godot/imported/Tileset.png-4d5f46b161a25d1155e81a395f05c64a.ctex::
-::res://scenes/::1760742372
-bgscore.tscn::PackedScene::272292035180293050::1760637377::0::1::::<><><>0<>0<><>::uid://dcmgejjpuo2t6::::res://assets/sounds/happy-14585.mp3
-coins.tscn::PackedScene::6315995279012084655::1760637376::0::1::::<><><>0<>0<><>::uid://b532xg1p23qa7::::res://scripts/coins.gd<>uid://pdq6g82b0oj0::::res://assets/spritesandtiles/coinsspritesheet.png<>uid://dpheh5d76okmv::::res://assets/sounds/retro-coin-4-236671 (1).mp3
-enemy.tscn::PackedScene::5787970699043758374::1760637376::0::1::::<><><>0<>0<><>::uid://c6nmoadd0vqvj::::res://scripts/enemy.gd<>uid://b20lfl6ix6o1q::::res://assets/spritesandtiles/knightspritesheet.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn
-killzone.tscn::PackedScene::174508661700247586::1760637376::0::1::::<><><>0<>0<><>::uid://cnvl1x6lwoi5y::::res://scripts/killzone.gd<>uid://dr7vg1oo5glx1::::res://assets/sounds/086398_game-die-81356.mp3
-platform.tscn::PackedScene::6838488032717272124::1760742372::0::1::::<><><>0<>0<><>::uid://bf31vnhmqas02::::res://scripts/platform.gd<>uid://dq35dyb7f3iol::::res://assets ufficiali/Cloud.png
-player.tscn::PackedScene::1762400828491724325::1760742372::0::1::::<><><>0<>0<><>::uid://b5ni5nf61jj5x::::res://scripts/player.gd<>uid://db4hghiax0cyx::::res://assets/spritesandtiles/knight.png<>uid://cppvrr6qeq2dl::::res://assets ufficiali/assets/claudio.png
-::res://scenes/levels/::1760742371
-gametilemap.tscn::PackedScene::4150920340205671688::1760637376::0::1::::<><><>0<>0<><>::uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
-level_1.tscn::PackedScene::8468622124454539738::1760742371::0::1::::<><><>0<>0<><>::uid://bjhve3c1ouf0m::::res://scripts/gamemanager.gd<>uid://dcwhujwbmk2tg::::res://scripts/level_1.gd<>uid://0dyqpxiehd0p::::res://scenes/player.tscn<>uid://cl7yng73edwjh::::res://assets ufficiali/sfondo.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn<>uid://cop0bc0c7rxu1::::res://scenes/enemy.tscn<>uid://da16c4juevxfy::::res://assets ufficiali/assets/Muri.png<>uid://bvrjk2mk6lx6e::::res://assets ufficiali/Assets.png<>uid://bfohhdrfsr27h::::res://assets ufficiali/3 Objects/Pointers/2.png<>uid://dq35dyb7f3iol::::res://assets ufficiali/Cloud.png<>uid://dyl240l1srl7v::::res://assets ufficiali/Swamp.png<>uid://dtsx536bwwcx2::::res://assets ufficiali/assets/Tileset.png<>uid://c4ou5s81n7p6s::::res://scenes/platform.tscn
+::res://scenes/::1760862015
+bgscore.tscn::PackedScene/PackedScene::272292035180293050::1760637377::0::1::::<><><>0<>0<><>::uid://dcmgejjpuo2t6::::res://assets/sounds/happy-14585.mp3
+coins.tscn::PackedScene/PackedScene::6315995279012084655::1760637376::0::1::::<><><>0<>0<><>::uid://b532xg1p23qa7::::res://scripts/coins.gd<>uid://pdq6g82b0oj0::::res://assets/spritesandtiles/coinsspritesheet.png<>uid://dpheh5d76okmv::::res://assets/sounds/retro-coin-4-236671 (1).mp3
+enemy.tscn::PackedScene/PackedScene::5787970699043758374::1760637376::0::1::::<><><>0<>0<><>::uid://c6nmoadd0vqvj::::res://scripts/enemy.gd<>uid://b20lfl6ix6o1q::::res://assets/spritesandtiles/knightspritesheet.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn
+killzone.tscn::PackedScene/PackedScene::174508661700247586::1760637376::0::1::::<><><>0<>0<><>::uid://cnvl1x6lwoi5y::::res://scripts/killzone.gd<>uid://dr7vg1oo5glx1::::res://assets/sounds/086398_game-die-81356.mp3
+platform.tscn::PackedScene::6838488032717272124::1760862015::0::1::::<><><>0<>0<><>::uid://bf31vnhmqas02::::res://scripts/platform.gd<>uid://dq35dyb7f3iol::::res://assets ufficiali/Cloud.png
+player.tscn::PackedScene::1762400828491724325::1760862015::0::1::::<><><>0<>0<><>::uid://b5ni5nf61jj5x::::res://scripts/player.gd<>uid://db4hghiax0cyx::::res://assets/spritesandtiles/knight.png<>uid://cppvrr6qeq2dl::::res://assets ufficiali/assets/claudio.png
+::res://scenes/levels/::1760862014
+gametilemap.tscn::PackedScene/PackedScene::4150920340205671688::1760637376::0::1::::<><><>0<>0<><>::uid://5pwjlsg4srtf::::res://assets/spritesandtiles/goblingamespritesheet1.png
+level_1.tscn::PackedScene::8468622124454539738::1760862014::0::1::::<><><>0<>0<><>::uid://bjhve3c1ouf0m::::res://scripts/gamemanager.gd<>uid://dcwhujwbmk2tg::::res://scripts/level_1.gd<>uid://0dyqpxiehd0p::::res://scenes/player.tscn<>uid://cl7yng73edwjh::::res://assets ufficiali/sfondo.png<>uid://cqseq1rcfs8q::::res://scenes/killzone.tscn<>uid://cop0bc0c7rxu1::::res://scenes/enemy.tscn<>uid://da16c4juevxfy::::res://assets ufficiali/assets/Muri.png<>uid://bvrjk2mk6lx6e::::res://assets ufficiali/Assets.png<>uid://bfohhdrfsr27h::::res://assets ufficiali/3 Objects/Pointers/2.png<>uid://dq35dyb7f3iol::::res://assets ufficiali/Cloud.png<>uid://dxbu6taup0yhg::::res://assets ufficiali/3 Objects/oak_woods_tileset.png<>uid://dyl240l1srl7v::::res://assets ufficiali/Swamp.png<>uid://dtsx536bwwcx2::::res://assets ufficiali/assets/Tileset.png<>uid://c4ou5s81n7p6s::::res://scenes/platform.tscn<>uid://d3jppaxrpq65t::::res://assets ufficiali/assets/house.png<>uid://bqoqukjc18uib::::res://assets ufficiali/3 Objects/decorations/fence_1.png<>uid://d13slpgg22sbc::::res://assets ufficiali/3 Objects/decorations/grass_1.png<>uid://ceib5uqa30c34::::res://assets ufficiali/3 Objects/decorations/grass_2.png<>uid://c0qa52xp72iq6::::res://assets ufficiali/3 Objects/decorations/grass_3.png<>uid://doplg03k2vu76::::res://assets ufficiali/3 Objects/decorations/shop.png<>uid://boid8gjpn8dg3::::res://assets ufficiali/3 Objects/decorations/lamp.png<>uid://c6ml37orviil0::::res://assets ufficiali/3 Objects/decorations/sign.png<>uid://c7qsfoawek56a::::res://assets ufficiali/3 Objects/Pointers/1.png<>uid://mqvkrp3r55yg::::res://assets ufficiali/3 Objects/Pointers/4.png<>uid://cmyhwx4miy3kf::::res://assets ufficiali/3 Objects/Pointers/3.png
 ::res://scenes/test/::1760637325
-testscene.tscn::PackedScene::4426919525908749456::1760637325::0::1::::<><><>0<>0<><>::uid://b0e0b0t77smh1::::res://scenes/levels/gametilemap.tscn<>uid://0dyqpxiehd0p::::res://scenes/player.tscn
+testscene.tscn::PackedScene/PackedScene::4426919525908749456::1760637325::0::1::::<><><>0<>0<><>::uid://b0e0b0t77smh1::::res://scenes/levels/gametilemap.tscn<>uid://0dyqpxiehd0p::::res://scenes/player.tscn
 ::res://scripts/::1760739699
-coins.gd::GDScript::4551569358036000592::1735724557::0::1::::<>Area2D<><>0<>0<><>::
-enemy.gd::GDScript::6976286040800821739::1735714813::0::1::::<>CharacterBody2D<><>0<>0<><>::
-gamemanager.gd::GDScript::3033854595681761586::1735719363::0::1::::<>Node<><>0<>0<><>::
-killzone.gd::GDScript::5729363841533576612::1735797287::0::1::::<>Area2D<><>0<>0<><>::
-level_1.gd::GDScript::7345517290529890984::1760717788::0::1::::<>Node2D<><>0<>0<><>::
-platform.gd::GDScript::2796784316664678517::1760739699::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-player.gd::GDScript::4519462905367310271::1760646612::0::1::::<>CharacterBody2D<><>0<>0<><>::
+coins.gd::GDScript/GDScript::4551569358036000592::1735724557::0::1::::<>Area2D<><>0<>0<><>::
+enemy.gd::GDScript/GDScript::6976286040800821739::1735714813::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gamemanager.gd::GDScript/GDScript::3033854595681761586::1735719363::0::1::::<>Node<><>0<>0<><>::
+killzone.gd::GDScript/GDScript::5729363841533576612::1735797287::0::1::::<>Area2D<><>0<>0<><>::
+level_1.gd::GDScript/GDScript::7345517290529890984::1760717788::0::1::::<>Node2D<><>0<>0<><>::
+platform.gd::GDScript/GDScript::2796784316664678517::1760739699::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::4519462905367310271::1760646612::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://styles/::1760637336
-ingametext.tres::LabelSettings::1666761158330767295::1760637336::0::1::::<><><>0<>0<><>::uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf
+ingametext.tres::LabelSettings/LabelSettings::1666761158330767295::1760637336::0::1::::<><><>0<>0<><>::uid://bap4myteag8nn::::res://assets/fonts/PixelOperator.ttf
