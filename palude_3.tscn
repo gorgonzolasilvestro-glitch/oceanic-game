@@ -1,0 +1,68 @@
+[gd_scene load_steps=12 format=3 uid="uid://bcmpdlqe46p67"]
+
+[ext_resource type="Texture2D" uid="uid://cbl8icv8j3h8w" path="res://assets ufficiali/assets/Lapalude1.png" id="1_1ehc0"]
+[ext_resource type="Script" uid="uid://babwbgbx4opsy" path="res://scenes/texture_rect.gd" id="2_cbs05"]
+[ext_resource type="Texture2D" uid="uid://ceog0mtntq736" path="res://assets ufficiali/assets/Lapalude2.png" id="3_tvovm"]
+[ext_resource type="Texture2D" uid="uid://ncl44fneqwor" path="res://assets ufficiali/assets/Lapalude3.png" id="4_6knrt"]
+[ext_resource type="Texture2D" uid="uid://skl5o1fotvcg" path="res://assets ufficiali/assets/Lapalude4.png" id="5_d8yx4"]
+[ext_resource type="Texture2D" uid="uid://vncgnw177ew4" path="res://assets ufficiali/assets/Lapalude5.png" id="6_aku3r"]
+[ext_resource type="Texture2D" uid="uid://de1otkxqqdd18" path="res://assets ufficiali/assets/Lapalude6.png" id="7_6853d"]
+[ext_resource type="Texture2D" uid="uid://dc34lfwd423j6" path="res://assets ufficiali/assets/Lapalude7.png" id="8_mwulo"]
+
+[sub_resource type="Animation" id="Animation_5w214"]
+resource_name = "La palude"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_1ehc0"), ExtResource("3_tvovm"), ExtResource("4_6knrt"), ExtResource("5_d8yx4"), ExtResource("6_aku3r"), ExtResource("7_6853d"), ExtResource("8_mwulo")]
+}
+
+[sub_resource type="Animation" id="Animation_1m5mi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.166667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_1ehc0")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xfvq4"]
+_data = {
+&"La palude": SubResource("Animation_5w214"),
+&"RESET": SubResource("Animation_1m5mi")
+}
+
+[node name="Palude3" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -196.0
+offset_top = 52.0
+offset_right = 196.0
+offset_bottom = 126.0
+grow_horizontal = 2
+texture = ExtResource("1_1ehc0")
+script = ExtResource("2_cbs05")
+fade_time1 = 1.7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_xfvq4")
+}

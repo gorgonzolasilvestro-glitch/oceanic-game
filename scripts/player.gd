@@ -1,26 +1,32 @@
 extends CharacterBody2D
 
+# --- PARAMETRI ---
 @export var SPEED = 120.0
 @export var JUMP_VELOCITY = -300.0
 @export var DASH_SPEED = 400.0
 @export var DASH_DURATION = 0.30
 @export var DASH_COOLDOWN = 1.0
+@export var KNOCKBACK_FORCE = 200.0
 
+# --- NODI ---
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var dash_particles: CPUParticles2D = $CPUParticles2D
 @onready var dash_timer := Timer.new()
 @onready var cooldown_timer := Timer.new()
 
-# --- Audio ---
+# --- AUDIO ---
 @onready var audio_walk: AudioStreamPlayer2D = $AudioWalk
 @onready var audio_jump: AudioStreamPlayer2D = $AudioJump
 @onready var audio_land: AudioStreamPlayer2D = $AudioLand
 @onready var audio_dash: AudioStreamPlayer2D = $AudioDash
+@onready var audio_hit: AudioStreamPlayer2D = $AudioDamage
 
+# --- STATI ---
 var is_dashing = false
 var can_dash = true
 var dash_direction = 1
-var was_on_floor = true  # per rilevare l'atterraggio
+var was_on_floor = true
+var is_hit = false
 
 func _ready() -> void:
 	# Timer durata dash
@@ -35,20 +41,30 @@ func _ready() -> void:
 	cooldown_timer.one_shot = true
 	cooldown_timer.connect("timeout", Callable(self, "_on_cooldown_timeout"))
 
-	# inizialmente particelle spente
 	dash_particles.emitting = false
 
 func _physics_process(delta: float) -> void:
-	# Se stiamo facendo il dash, gestiamo solo il dash (muove e ritorna)
+	# --- 1) STATO HIT: blocco controlli e gravità finché non atterra ---
+	if is_hit:
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+			move_and_slide()
+			return
+		else:
+			is_hit = false
+			can_dash = true
+			animated_sprite.play("idle")
+			return
+
+	# --- 2) STATO DASH: movimento dash prioritario ---
 	if is_dashing:
 		velocity.x = DASH_SPEED * dash_direction
 		velocity.y = 0
 		move_and_slide()
-		# aggiorniamo was_on_floor per non sparare land su entrata/uscita
 		was_on_floor = is_on_floor()
 		return
 
-	# --- 1) Input orizzontale: impostiamo velocity.x basandoci sugli input ---
+	# --- 3) INPUT MOVIMENTO ORIZZONTALE ---
 	var input_dir = 0
 	if Input.is_action_pressed("move_left"):
 		input_dir = -1
@@ -61,23 +77,21 @@ func _physics_process(delta: float) -> void:
 
 	velocity.x = input_dir * SPEED
 
-	# --- 2) Salto: impostiamo la velocità verticale solo quando si preme il jump a terra ---
+	# --- 4) SALTO ---
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y = JUMP_VELOCITY
 		animated_sprite.play("jump")
 		audio_jump.play()
 
-	# --- 3) Gravità ---
+	# --- 5) GRAVITÀ ---
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# --- 4) Applichiamo la fisica (qui is_on_floor() viene aggiornato correttamente) ---
+	# --- 6) APPLICA FISICA ---
 	move_and_slide()
 
-	# --- 5) Ora aggiorniamo animazioni e suoni in base allo stato attuale ---
+	# --- 7) ANIMAZIONI ---
 	var grounded = is_on_floor()
-
-	# Animazioni: idle/run (grounded) o jump (air)
 	if grounded:
 		if velocity.x == 0:
 			if animated_sprite.animation != "idle":
@@ -85,11 +99,8 @@ func _physics_process(delta: float) -> void:
 		else:
 			if animated_sprite.animation != "run":
 				animated_sprite.play("run")
-	else:
-		# in aria non riavviamo continuamente l'animazione di jump (assumiamo sia stata settata al momento del jump)
-		pass
 
-	# Suono passi: solo se grounded e stai effettivamente camminando e non dashing
+	# --- 8) SUONI PASSI ---
 	if grounded and velocity.x != 0 and not is_dashing:
 		if not audio_walk.playing:
 			audio_walk.play()
@@ -97,24 +108,22 @@ func _physics_process(delta: float) -> void:
 		if audio_walk.playing:
 			audio_walk.stop()
 
-	# Rilevamento atterraggio (play land sound una sola volta quando si torna a terra)
+	# --- 9) ATERRAGGIO ---
 	if not was_on_floor and grounded:
 		audio_land.play()
-
 	was_on_floor = grounded
 
-	# DASH (tasto destro)
+	# --- 10) DASH ---
 	if Input.is_action_just_pressed("dash") and not is_dashing and can_dash:
 		start_dash()
 
+# --- FUNZIONI DASH ---
 func start_dash() -> void:
 	is_dashing = true
 	can_dash = false
 	animated_sprite.play("dash")
-
 	dash_particles.emitting = true
 	audio_dash.play()
-
 	dash_timer.start()
 	cooldown_timer.start()
 
@@ -124,3 +133,32 @@ func _on_dash_timeout() -> void:
 
 func _on_cooldown_timeout() -> void:
 	can_dash = true
+
+# --- FUNZIONE HIT + KNOCKBACK ---
+func apply_hit_from_position(hit_pos: Vector2) -> void:
+	if is_hit:
+		return
+
+	is_hit = true
+	is_dashing = false
+	can_dash = false
+
+	# Animazione e suono hit
+	animated_sprite.play("gothit")
+	if audio_hit:
+		audio_hit.play()
+
+	# Direzione knockback
+	var hit_dir = sign(global_position.x - hit_pos.x)
+	if hit_dir == 0:
+		hit_dir = 1
+
+	# Applica velocity knockback
+	velocity.x = hit_dir * KNOCKBACK_FORCE
+	velocity.y = JUMP_VELOCITY / 2
+
+	# Stop suoni e particelle attive
+	audio_walk.stop()
+	dash_particles.emitting = false
+
+	print("Player hit! Direzione:", hit_dir)

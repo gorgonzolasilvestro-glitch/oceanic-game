@@ -52,13 +52,14 @@ _data = {
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -167.5
-offset_top = 40.0
-offset_right = 167.5
-offset_bottom = 103.0
+offset_left = -196.0
+offset_top = 52.0
+offset_right = 196.0
+offset_bottom = 126.0
 grow_horizontal = 2
 texture = ExtResource("3_6gso4")
 script = ExtResource("2_ghj5q")
+fade_time1 = 1.7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
 root_node = NodePath("../..")

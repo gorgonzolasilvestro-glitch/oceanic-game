@@ -1,0 +1,68 @@
+[gd_scene load_steps=12 format=3 uid="uid://cm3fiftespkmf"]
+
+[ext_resource type="Texture2D" uid="uid://8g4aq33opvh3" path="res://assets ufficiali/assets/Cittadella/Cittadella1.png" id="1_et7vk"]
+[ext_resource type="Script" uid="uid://babwbgbx4opsy" path="res://scenes/texture_rect.gd" id="2_8pcdq"]
+[ext_resource type="Texture2D" uid="uid://c5teif3lqw26y" path="res://assets ufficiali/assets/Cittadella/Cittadella2.png" id="4_et7vk"]
+[ext_resource type="Texture2D" uid="uid://b28abgp6s3l8i" path="res://assets ufficiali/assets/Cittadella/Cittadella3.png" id="5_8pcdq"]
+[ext_resource type="Texture2D" uid="uid://di5x5s3tqosdn" path="res://assets ufficiali/assets/Cittadella/Cittadella4.png" id="6_0k6vu"]
+[ext_resource type="Texture2D" uid="uid://mofi4cuhanau" path="res://assets ufficiali/assets/Cittadella/Cittadella5.png" id="7_dw2e5"]
+[ext_resource type="Texture2D" uid="uid://rmac8y1m7fsu" path="res://assets ufficiali/assets/Cittadella/Cittadella6.png" id="8_rf6x7"]
+[ext_resource type="Texture2D" uid="uid://bhqvookx0auaj" path="res://assets ufficiali/assets/Cittadella/Cittadella7.png" id="9_cpym7"]
+
+[sub_resource type="Animation" id="Animation_5w214"]
+resource_name = "La palude"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_et7vk"), ExtResource("4_et7vk"), ExtResource("5_8pcdq"), ExtResource("6_0k6vu"), ExtResource("7_dw2e5"), ExtResource("8_rf6x7"), ExtResource("9_cpym7")]
+}
+
+[sub_resource type="Animation" id="Animation_1m5mi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.166667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_et7vk")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xfvq4"]
+_data = {
+&"La palude": SubResource("Animation_5w214"),
+&"RESET": SubResource("Animation_1m5mi")
+}
+
+[node name="Cittadella1" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -196.0
+offset_top = 52.0
+offset_right = 196.0
+offset_bottom = 126.0
+grow_horizontal = 2
+texture = ExtResource("1_et7vk")
+script = ExtResource("2_8pcdq")
+fade_time1 = 1.7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_xfvq4")
+}
