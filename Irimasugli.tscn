@@ -1,0 +1,69 @@
+[gd_scene load_steps=13 format=3 uid="uid://dtq1jocg8wbvv"]
+
+[ext_resource type="Texture2D" uid="uid://cbl8icv8j3h8w" path="res://assets ufficiali/assets/Lapalude1.png" id="1_yo5m7"]
+[ext_resource type="Script" uid="uid://babwbgbx4opsy" path="res://scenes/texture_rect.gd" id="2_w85vw"]
+[ext_resource type="Texture2D" uid="uid://b78nne8dw6qt6" path="res://assets ufficiali/assets/Irimasugli/Rimasugli1.png" id="3_w85vw"]
+[ext_resource type="Texture2D" uid="uid://dra61ik5jwlkj" path="res://assets ufficiali/assets/Irimasugli/Rimasugli2.png" id="4_3y2da"]
+[ext_resource type="Texture2D" uid="uid://bv5ancssg8qnm" path="res://assets ufficiali/assets/Irimasugli/Rimasugli3.png" id="5_p187g"]
+[ext_resource type="Texture2D" uid="uid://bhjdllemj57nh" path="res://assets ufficiali/assets/Irimasugli/Rimasugli4.png" id="6_m7opp"]
+[ext_resource type="Texture2D" uid="uid://crfwwtk0r33nx" path="res://assets ufficiali/assets/Irimasugli/Rimasugli5.png" id="7_c2sfu"]
+[ext_resource type="Texture2D" uid="uid://csriovhoi8fw" path="res://assets ufficiali/assets/Irimasugli/Rimasugli6.png" id="8_36edi"]
+[ext_resource type="Texture2D" uid="uid://or84r2h0jbad" path="res://assets ufficiali/assets/Irimasugli/Rimasugli7.png" id="9_tddbj"]
+
+[sub_resource type="Animation" id="Animation_5w214"]
+resource_name = "La palude"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.25, 0.4, 0.55, 0.7, 0.85, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_w85vw"), ExtResource("4_3y2da"), ExtResource("5_p187g"), ExtResource("6_m7opp"), ExtResource("7_c2sfu"), ExtResource("8_36edi"), ExtResource("9_tddbj")]
+}
+
+[sub_resource type="Animation" id="Animation_1m5mi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.166667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_yo5m7")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xfvq4"]
+_data = {
+&"La palude": SubResource("Animation_5w214"),
+&"RESET": SubResource("Animation_1m5mi")
+}
+
+[node name="Palude3" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -196.0
+offset_top = 52.0
+offset_right = 196.0
+offset_bottom = 126.0
+grow_horizontal = 2
+texture = ExtResource("1_yo5m7")
+script = ExtResource("2_w85vw")
+fade_time1 = 1.7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_xfvq4")
+}

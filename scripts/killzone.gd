@@ -1,15 +1,12 @@
 extends Area2D
 
-@onready var timer: Timer = $Timer
-@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
+# Coordinate di destinazione (modificale come vuoi)
+@export var teleport_position: Vector2 = Vector2(2225.0, -1796.0)
 
-func _on_body_entered(body: Node2D) -> void:
-	audio.play()
-	#reducing the engine time by half on player entered
-	Engine.time_scale = 0.5
-	timer.start()
+func _ready():
+	connect("body_entered", Callable(self, "_on_body_entered"))
 
-func _on_timer_timeout() -> void:
-	#engine time back to normal
-	Engine.time_scale = 1.0
-	get_tree().reload_current_scene()
+func _on_body_entered(body):
+	if body.name == "Player":
+		print("Teletrasporto attivato!")
+		body.global_position = teleport_position

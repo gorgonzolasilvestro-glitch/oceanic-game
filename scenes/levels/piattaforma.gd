@@ -1,0 +1,30 @@
+extends AnimatableBody2D
+
+@export var onewayplatform := false
+@export var amplitude: float = 120.0 # distanza massima in pixel (su/giù)
+@export var speed: float = 0.3      # cicli al secondo
+@export var vertical: bool = true    # true = su/giu, false = sinistra/destra
+
+@export var collision_shape_path: NodePath = "CollisionShape2D"
+@onready var collision_shape: CollisionShape2D = get_node(collision_shape_path)
+
+var _start_pos: Vector2
+var _time: float = 0.0
+
+func _ready() -> void:
+	_start_pos = global_position
+
+func _physics_process(delta: float) -> void:
+	# aggiorna one-way collision
+	if collision_shape:
+		collision_shape.one_way_collision = onewayplatform
+
+	# calcola offset sinusoidale (-amplitude .. +amplitude)
+	_time += delta * speed
+	var offset := amplitude * sin(_time * PI * 2)
+
+	# movimento verticale/orizzontale
+	if vertical:
+		global_position = _start_pos + Vector2(0, offset)
+	else:
+		global_position = _start_pos + Vector2(offset, 0)

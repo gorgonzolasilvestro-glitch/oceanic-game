@@ -2,7 +2,7 @@ extends PointLight2D
 
 @export var player_path: NodePath = "/root/level1/Player"  # percorso al Player
 @export var fade_time: float = 0.5
-@export var max_energy: float = 1.5
+@export var max_energy: float = 1.7
 @export var vertical_offset: float = -5.0
 
 var player: Node2D

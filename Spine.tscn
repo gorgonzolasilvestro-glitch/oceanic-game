@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://p0vrr5vcd7tg"]
+
+[ext_resource type="Script" uid="uid://bf31vnhmqas02" path="res://scripts/platform.gd" id="1_8emad"]
+[ext_resource type="Texture2D" uid="uid://qga60l8pepsf" path="res://assets ufficiali/spineee.png" id="2_8emad"]
+[ext_resource type="Script" uid="uid://bf2ej2y131upi" path="res://scenes/levels/area_2d.gd" id="3_4pobi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_trkax"]
+radius = 29.88
+
+[node name="platform4" type="AnimatableBody2D"]
+script = ExtResource("1_8emad")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.5, -5)
+scale = Vector2(1.0125, 1)
+texture = ExtResource("2_8emad")
+region_enabled = true
+region_rect = Rect2(65.8605, 1.38502, 59.4516, 60.3889)
+
+[node name="Area2D" type="Area2D" parent="." groups=["enemy_hit"]]
+position = Vector2(1, -31)
+collision_layer = 3
+script = ExtResource("3_4pobi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["enemy_hit"]]
+position = Vector2(-1, 26)
+shape = SubResource("CircleShape2D_trkax")
