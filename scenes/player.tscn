@@ -193,7 +193,7 @@ scale_amount_curve = SubResource("Curve_dqkch")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -10)
 sprite_frames = SubResource("SpriteFrames_i7whq")
-animation = &"gothit"
+animation = &"idle"
 
 [node name="AudioWalk" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_ur7pv")
