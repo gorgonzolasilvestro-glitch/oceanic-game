@@ -2,10 +2,10 @@
 # Godot-specific files
 # =======================
 
-# Import/Cache
+# Editor/Temp/Cache
+.godot/
 .import/
 .cache/
-.godot/    # editor settings, temp files
 
 # Exported project files
 .export/
@@ -19,7 +19,7 @@
 *.dll
 *.mdb
 
-# Temporary and user-specific files
+# User-specific / temp
 *.tmp
 *.log
 *.swp
