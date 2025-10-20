@@ -38,3 +38,7 @@ desktop.ini
 # =======================
 bin/
 build/
+.godot/
+.import/
+.cache/
+.mono/
