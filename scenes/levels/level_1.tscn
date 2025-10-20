@@ -1,10 +1,13 @@
-[gd_scene load_steps=66 format=4 uid="uid://dswi77j3xwly5"]
+[gd_scene load_steps=71 format=4 uid="uid://dswi77j3xwly5"]
 
 [ext_resource type="Script" uid="uid://bjhve3c1ouf0m" path="res://scripts/gamemanager.gd" id="1_g24pm"]
 [ext_resource type="Script" uid="uid://dcwhujwbmk2tg" path="res://scripts/level_1.gd" id="1_jt5ki"]
 [ext_resource type="PackedScene" uid="uid://0dyqpxiehd0p" path="res://scenes/player.tscn" id="1_nt6kk"]
 [ext_resource type="Texture2D" uid="uid://cl7yng73edwjh" path="res://assets ufficiali/sfondo.png" id="2_qxy0u"]
 [ext_resource type="PackedScene" uid="uid://cqseq1rcfs8q" path="res://scenes/killzone.tscn" id="3_k3nfs"]
+[ext_resource type="Texture2D" uid="uid://bouaqrnqxystf" path="res://assets ufficiali/1.png" id="3_ytidy"]
+[ext_resource type="Texture2D" uid="uid://eytaissfo4ew" path="res://assets ufficiali/2.png" id="4_hvllt"]
+[ext_resource type="Texture2D" uid="uid://cploopa5snmg3" path="res://assets ufficiali/3.png" id="5_dp4fg"]
 [ext_resource type="PackedScene" uid="uid://cop0bc0c7rxu1" path="res://scenes/enemy.tscn" id="5_xbruk"]
 [ext_resource type="Texture2D" uid="uid://da16c4juevxfy" path="res://assets ufficiali/assets/Muri.png" id="9_dga24"]
 [ext_resource type="Texture2D" uid="uid://bvrjk2mk6lx6e" path="res://assets ufficiali/Assets.png" id="9_iav0o"]
@@ -16,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://c4ou5s81n7p6s" path="res://scenes/platform.tscn" id="13_mm8aj"]
 [ext_resource type="Texture2D" uid="uid://s68r7ee76pm1" path="res://assets ufficiali/assets/ELR_SpringlLeaf.png" id="14_o7j4k"]
 [ext_resource type="Texture2D" uid="uid://d3jppaxrpq65t" path="res://assets ufficiali/assets/house.png" id="15_7h2jl"]
+[ext_resource type="Texture2D" uid="uid://jaf1td80s8hf" path="res://assets ufficiali/Dungeon Tile Set.png" id="15_hvllt"]
 [ext_resource type="Texture2D" uid="uid://bqoqukjc18uib" path="res://assets ufficiali/3 Objects/decorations/fence_1.png" id="16_mqh5v"]
 [ext_resource type="Texture2D" uid="uid://d13slpgg22sbc" path="res://assets ufficiali/3 Objects/decorations/grass_1.png" id="17_7o3do"]
 [ext_resource type="Texture2D" uid="uid://ceib5uqa30c34" path="res://assets ufficiali/3 Objects/decorations/grass_2.png" id="18_o7j4k"]
@@ -1987,6 +1991,142 @@ texture = ExtResource("10_ndtll")
 30:21/0 = 0
 30:21/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, 0.179859, 8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dp4fg"]
+texture = ExtResource("15_hvllt")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+5:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+5:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+5:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+10:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+2:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iwr0g"]
 texture = ExtResource("10_dnkej")
 0:0/0 = 0
@@ -2028,6 +2168,7 @@ sources/2 = SubResource("TileSetAtlasSource_excbq")
 sources/3 = SubResource("TileSetAtlasSource_wtwp4")
 sources/6 = SubResource("TileSetAtlasSource_iwr0g")
 sources/4 = SubResource("TileSetAtlasSource_4yk0h")
+sources/5 = SubResource("TileSetAtlasSource_dp4fg")
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_31oqk"]
 particles_animation = true
@@ -2139,12 +2280,33 @@ motion_scale = Vector2(0.7, 0.7)
 position = Vector2(631, -842)
 texture = ExtResource("2_qxy0u")
 
+[node name="1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1959, -1142)
+scale = Vector2(1.99132, 2.12963)
+texture = ExtResource("3_ytidy")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.8)
+
+[node name="2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(2495, -1716)
+scale = Vector2(2.02951, 2.07716)
+texture = ExtResource("4_hvllt")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.9, 0.9)
+
+[node name="3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(2494.47, -1656)
+scale = Vector2(1.04004, 1.09182)
+texture = ExtResource("5_dp4fg")
+
 [node name="gamemanager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_g24pm")
 
 [node name="Player" parent="." instance=ExtResource("1_nt6kk")]
-position = Vector2(-98, -702)
+position = Vector2(2232, -1795)
 collision_layer = 1
 
 [node name="enemy" parent="." instance=ExtResource("5_xbruk")]
@@ -2753,6 +2915,7 @@ position = Vector2(-1001, 438)
 shape = SubResource("CircleShape2D_4yk0h")
 
 [node name="PointLight2D3" type="PointLight2D" parent="."]
+visible = false
 position = Vector2(2105.89, -1697.02)
 rotation = 3.14134
 scale = Vector2(3.37762, 8.48346)
@@ -2795,9 +2958,9 @@ texture_scale = 2.22
 script = ExtResource("33_o8s4s")
 
 [node name="PointLight2D4" type="PointLight2D" parent="."]
-position = Vector2(2394, -1319)
+position = Vector2(2152.29, -1318.51)
 rotation = 4.71138
-scale = Vector2(14.2305, 10.6133)
+scale = Vector2(14.2228, 3.06)
 energy = 1.63
 blend_mode = 1
 texture = SubResource("GradientTexture2D_cfnpk")
