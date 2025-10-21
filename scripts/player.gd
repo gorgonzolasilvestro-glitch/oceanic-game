@@ -27,6 +27,9 @@ var can_dash = true
 var dash_direction = 1
 var was_on_floor = true
 var is_hit = false
+var can_move: bool = true
+
+
 
 func _ready() -> void:
 	# Timer durata dash
@@ -34,6 +37,7 @@ func _ready() -> void:
 	dash_timer.wait_time = DASH_DURATION
 	dash_timer.one_shot = true
 	dash_timer.connect("timeout", Callable(self, "_on_dash_timeout"))
+	add_to_group("player")
 
 	# Timer cooldown dash
 	add_child(cooldown_timer)
@@ -55,6 +59,9 @@ func _physics_process(delta: float) -> void:
 			can_dash = true
 			animated_sprite.play("idle")
 			return
+	if !can_move:
+		animated_sprite.play("idle")
+		return
 
 	# --- 2) STATO DASH: movimento dash prioritario ---
 	if is_dashing:
