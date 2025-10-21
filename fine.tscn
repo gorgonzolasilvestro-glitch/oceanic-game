@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmf0eg13prl7h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1l8ur"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_3n32b"]
+resource_name = "Testo"
+length = 39.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.0333338, 12.6667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["
+", "ma a che costo?"]
+}
+
+[sub_resource type="Animation" id="Animation_2wmpi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ilcr2"]
+_data = {
+&"RESET": SubResource("Animation_2wmpi"),
+&"Testo": SubResource("Animation_3n32b")
+}
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -782.0
+offset_top = -241.0
+offset_right = 173.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.78785, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -11.5
+offset_right = 33.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_1l8ur")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ilcr2")
+}
